@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 100%;;
+    height: 30vh;
+}
+
+.navy-blue {
+    background-color: var(--navy-blue);
+}
+
+.baby-blue {
+    background-color: var(--baby-blue);
+}
+
+.forest-green {
+    background-color: var(--forest-green);
+}
