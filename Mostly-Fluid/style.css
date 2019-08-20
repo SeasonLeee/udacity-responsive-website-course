@@ -16,8 +16,10 @@ html, body {
 }
 
 .main {
-    width: 100vw;
-    height: 100vh;
+    /* since we are demonstrating content layout */
+    /* there's no need to set explicit height to constraint it */
+    /* width: 100vw;
+    height: 100vh; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -47,8 +49,20 @@ html, body {
     background-color: var(--tangerine);
 }
 
+/* pad */
 @media screen and (min-width: 700px) {
     .baby-blue, .forest-green {
         width: 50%;
+    }
+}
+
+/* pc */
+@media screen and (min-width: 1000px) {
+    .navy-blue, .baby-blue {
+        width: 50%;
+    }
+
+    .forest-green, .scarlet, .tangerine {
+        width: 33.33333%;
     }
 }
