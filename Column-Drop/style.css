@@ -33,8 +33,15 @@
 
 /* laptop */
 @media screen and (min-width: 1024px) {
+    .navy-blue, .forest-green {
+        width: 20vw;
+    }
+
+    .baby-blue {
+        width: 60vw;
+    }
 }
 
 /* larger laptop */
-@media screen and (min-width: 1440px) {
-}
+/* @media screen and (min-width: 1440px) {
+} */
