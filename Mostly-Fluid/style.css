@@ -18,6 +18,8 @@ html, body {
 .main {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .section {
@@ -43,4 +45,10 @@ html, body {
 
 .tangerine {
     background-color: var(--tangerine);
+}
+
+@media screen and (min-width: 700px) {
+    .baby-blue, .forest-green {
+        width: 50%;
+    }
 }
