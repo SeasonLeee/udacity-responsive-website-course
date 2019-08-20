@@ -49,20 +49,28 @@ html, body {
     background-color: var(--tangerine);
 }
 
-/* pad */
-@media screen and (min-width: 700px) {
+/* tablet */
+@media screen and (min-width: 768px) {
     .baby-blue, .forest-green {
         width: 50%;
     }
 }
 
-/* pc */
-@media screen and (min-width: 1000px) {
+/* laptop */
+@media screen and (min-width: 1024px) {
     .navy-blue, .baby-blue {
         width: 50%;
     }
 
     .forest-green, .scarlet, .tangerine {
         width: 33.33333%;
+    }
+}
+
+/* larger laptop */
+@media screen and (min-width: 1440px) {
+    .main {
+        width: 1024px;
+        margin: 0 auto;
     }
 }
