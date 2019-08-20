@@ -19,3 +19,22 @@
 .forest-green {
     background-color: var(--forest-green);
 }
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .navy-blue {
+        width: 30vw;
+    }
+
+    .baby-blue {
+        width: 70vw;
+    }
+}
+
+/* laptop */
+@media screen and (min-width: 1024px) {
+}
+
+/* larger laptop */
+@media screen and (min-width: 1440px) {
+}
