@@ -39,6 +39,26 @@
 
 /* laptop */
 @media screen and (min-width: 1024px) {
+    .scarlet {
+        order: 1;
+        width: 15vw;
+        height: 80vh;
+    }
+
+    .wrapper {
+        order: 2;
+    }
+
+    .baby-blue, .forest-green {
+        width: 70vw;
+        height: 40vh;
+    }
+
+    .navy-blue {
+        order: 3;
+        width: 15vw;
+        height: 80vh;
+    }
 }
 
 /* larger laptop */
