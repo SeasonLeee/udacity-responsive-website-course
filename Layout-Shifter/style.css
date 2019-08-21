@@ -26,6 +26,15 @@
 
 /* tablet */
 @media screen and (min-width: 768px) {
+    .navy-blue {
+        height: 60vh;
+        width: 50vw;
+    }
+
+    .baby-blue, .forest-green {
+        height: 30vh;
+        width: 50vw;
+    }
 }
 
 /* laptop */
