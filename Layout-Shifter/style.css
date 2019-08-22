@@ -24,6 +24,14 @@
     background-color: var(--scarlet);
 }
 
+/* since we wrap the following two together to meet the later view point layout change */
+/* we need to give it's wrapper 100% in smaller viewpoint */
+@media screen and (max-width: 425px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
 /* tablet */
 @media screen and (min-width: 768px) {
     .navy-blue {
@@ -39,15 +47,22 @@
 
 /* laptop */
 @media screen and (min-width: 1024px) {
+    /* since the order is only effect on the one that has set */
+    /* and it start from 0 */
+    /* we can also change the current 1, 2, 3 order to */
+    /* -1 set the last element to be first, because order start at 0 */
+    /* and second to be bigger than 0 */
+    /* since the center remain its position, we don't need to set it's order */
     .scarlet {
-        order: 1;
+        /* order: 1; */
+        order: -1;
         width: 15vw;
         height: 80vh;
     }
 
-    .wrapper {
+    /* .wrapper {
         order: 2;
-    }
+    } */
 
     .baby-blue, .forest-green {
         width: 70vw;
@@ -55,7 +70,8 @@
     }
 
     .navy-blue {
-        order: 3;
+        /* order: 3; */
+        order: 1;
         width: 15vw;
         height: 80vh;
     }
