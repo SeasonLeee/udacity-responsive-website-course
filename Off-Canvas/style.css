@@ -1,0 +1,74 @@
+.navy-blue {
+    background-color: var(--navy-blue);
+}
+
+.baby-blue {
+    background-color: var(--baby-blue);
+}
+
+.jet-black {
+    background-color: var(--jet-black);
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.drawer-container {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: -100vw;
+    opacity: 0;
+    /* background: rgba(0, 0, 0, .5); */
+    position: absolute;
+    transition: .3s;
+}
+
+.drawer {
+    width: 70vw;
+    height: 100vh;
+    left: -70vw;
+    top: 0;
+    position: absolute;
+    transition: .3s;
+}
+
+.hamburger-icon {
+    width: 5vw;
+    padding: 2rem;
+}
+
+.bar {
+    width: 10vw;
+    height: .7vh;
+    border-radius: 1rem;
+    transition: .5s;
+    box-shadow: 0 0.1rem 0.2rem var(--lighter-black);
+}
+
+.bar + .bar {
+    margin-top: .3rem;
+}
+
+.icon-active .bar-1 {
+    transform: rotate(45deg) translate(1.5vw, 1vh);
+}
+
+.icon-active .bar-2 {
+    opacity: 0;
+}
+
+.icon-active .bar-3 {
+    transform: rotate(-45deg) translate(1.5vw, -1vh);
+}
+
+.drawer-active {
+    left: 0;
+    opacity: 1;
+}
+
+.drawer-active > .drawer {
+    left: 0;
+}

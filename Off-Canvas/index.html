@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Off Canvas</title>
+    <link rel="stylesheet" href="../shared-style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main baby-blue">
+        <div class="hamburger-icon">
+            <div class="bar bar-1 jet-black"></div>
+            <div class="bar bar-2 jet-black"></div>
+            <div class="bar bar-3 jet-black"></div>
+        </div>
+    </main>
+    <div class="drawer-container">
+        <section class="drawer navy-blue">
+        </section>
+    </div>
+
+    <script>
+        let icon = document.querySelector('.hamburger-icon');
+
+        let drawerContainer = document.querySelector('.drawer-container');
+
+        let drawer = document.querySelector('.drawer');
+        
+        icon.addEventListener('click', () => {
+            icon.classList.toggle('icon-active');
+            drawerContainer.classList.toggle('drawer-active')
+        });
+
+        drawerContainer.addEventListener('click', () => {
+            drawerContainer.classList.toggle('drawer-active');
+            icon.classList.toggle('icon-active');
+        });
+
+        drawer.addEventListener('click', (event) => {
+            event.stopPropagation();
+        })
+    </script>
+</body>
+</html>
