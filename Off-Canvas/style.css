@@ -72,3 +72,18 @@
 .drawer-active > .drawer {
     left: 0;
 }
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .bar {
+        width: 7vw;
+    }
+}
+
+/* laptop */
+@media screen and (min-width: 1024px) {
+}
+
+/* larger laptop */
+@media screen and (min-width: 1440px) {
+}
