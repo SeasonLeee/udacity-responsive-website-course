@@ -78,10 +78,51 @@
     .bar {
         width: 7vw;
     }
+
+    .icon-active .bar-1 {
+        transform: rotate(45deg) translate(1vw, 1vh);
+    }
+    
+    .icon-active .bar-3 {
+        transform: rotate(-45deg) translate(1vw, -1vh);
+    }    
 }
 
 /* laptop */
 @media screen and (min-width: 1024px) {
+    /* .bar {
+        width: 5vw;
+    } */
+
+    .main {
+        width: 70vw;
+        height: 100vh;
+    }
+    
+    .drawer-container {
+        width: 30vw;
+        height: 100vh;
+        top: unset;
+        left: 0;
+        opacity: unset;
+        position: unset;
+    }
+    
+    .drawer {
+        width: 100%;
+        top: unset;
+        left: 0;
+        position: unset;
+        transition: .3s;
+    }
+    
+    .hamburger-icon {
+        display: none;
+    }
+
+    .wrapper {
+        display: flex;
+    }
 }
 
 /* larger laptop */
